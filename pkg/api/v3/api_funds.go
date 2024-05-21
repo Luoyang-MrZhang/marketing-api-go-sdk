@@ -43,7 +43,7 @@ type FundsGetOpts struct {
 	Fields optional.Interface
 }
 
-func (a *FundsApiService) Get(ctx context.Context, advertiserId int64, localVarOptionals *FundsGetOpts) (FundsGetResponseData, http.Header, error) {
+func (a *FundsApiService) Get(ctx context.Context, accountId int64, advertiserId int64, localVarOptionals *FundsGetOpts) (FundsGetResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Get")
 		localVarPostBody    interface{}
@@ -61,6 +61,7 @@ func (a *FundsApiService) Get(ctx context.Context, advertiserId int64, localVarO
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
+	localVarQueryParams.Add("account_id", parameterToString(accountId, ""))
 	localVarQueryParams.Add("advertiser_id", parameterToString(advertiserId, ""))
 	if localVarOptionals != nil && localVarOptionals.Fields.IsSet() {
 		localVarQueryParams.Add("fields", parameterToString(localVarOptionals.Fields.Value(), "multi"))
