@@ -65,11 +65,12 @@ Name | Type | Description | Notes
 **ForwardLinkAssist** | [***OptimizationGoal**](OptimizationGoal.md) |  | [optional] [default to null]
 **ConversionName** | **string** |  | [optional] [default to null]
 **AutoAcquisitionStatus** | [***AutoAcquisitionStatus**](AutoAcquisitionStatus.md) |  | [optional] [default to null]
-**AutoAcquisitionStatusText** | **string** |  | [optional] [default to null]
-**AutoAcquisitionStatusMessage** | **string** |  | [optional] [default to null]
 **CostConstraintScene** | [***CostConstraintScene**](CostConstraintScene.md) |  | [optional] [default to null]
 **CustomCostCap** | **int64** |  | [optional] [default to null]
 **MpaSpec** | [***MpaSpec**](mpa_spec.md) |  | [optional] [default to null]
+**ShortPlayPayType** | [***ShortPlayPayType**](ShortPlayPayType.md) |  | [optional] [default to null]
+**SellStrategyId** | **int64** |  | [optional] [default to null]
+**OgCompletionType** | [***OgCompletionType**](OgCompletionType.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

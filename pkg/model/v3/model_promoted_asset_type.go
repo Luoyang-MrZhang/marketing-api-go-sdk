@@ -69,4 +69,8 @@ const (
 	PromotedAssetType_WECHAT_WORK                      PromotedAssetType = "PROMOTED_ASSET_TYPE_WECHAT_WORK"
 	PromotedAssetType_LIVE_STREAM_ROOM                 PromotedAssetType = "PROMOTED_ASSET_TYPE_LIVE_STREAM_ROOM"
 	PromotedAssetType_PERSONAL_STORE                   PromotedAssetType = "PROMOTED_ASSET_TYPE_PERSONAL_STORE"
+	PromotedAssetType_PLATFORM_CHANNEL                 PromotedAssetType = "PROMOTED_ASSET_TYPE_PLATFORM_CHANNEL"
+	PromotedAssetType_TWO_WHEEL_VEHICLE                PromotedAssetType = "PROMOTED_ASSET_TYPE_TWO_WHEEL_VEHICLE"
+	PromotedAssetType_GOVERNMENT_AFFAIRS               PromotedAssetType = "PROMOTED_ASSET_TYPE_GOVERNMENT_AFFAIRS"
+	PromotedAssetType_CAR_ECOLOGY                      PromotedAssetType = "PROMOTED_ASSET_TYPE_CAR_ECOLOGY"
 )

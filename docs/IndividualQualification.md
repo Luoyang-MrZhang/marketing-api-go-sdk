@@ -3,9 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**IdentificationUrl** | **string** |  | [optional] [default to null]
-**IdentificationUrl2** | **string** |  | [optional] [default to null]
-**PhotoUrl** | **string** |  | [optional] [default to null]
 **IdentificationFrontImageId** | **string** |  | [optional] [default to null]
 **IdentificationBackImageId** | **string** |  | [optional] [default to null]
 

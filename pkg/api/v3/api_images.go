@@ -33,11 +33,11 @@ type ImagesApiService service
 /*
 ImagesApiService 添加图片文件
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param uploadType
- * @param imageSignature
+ * @param signature
  * @param optional nil or *ImagesAddOpts - Optional Parameters:
-     * @param "ImageFile" (optional.Interface of *os.File) -
+     * @param "File" (optional.Interface of *os.File) -
      * @param "Bytes" (optional.String) -
      * @param "ImageUsage" (optional.String) -
      * @param "Description" (optional.String) -
@@ -49,7 +49,7 @@ ImagesApiService 添加图片文件
 */
 
 type ImagesAddOpts struct {
-	ImageFile      optional.Interface
+	File           optional.Interface
 	Bytes          optional.String
 	ImageUsage     optional.String
 	Description    optional.String
@@ -58,7 +58,7 @@ type ImagesAddOpts struct {
 	ResizeFileSize optional.Int64
 }
 
-func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadType string, imageSignature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
+func (a *ImagesApiService) Add(ctx context.Context, accountId int64, uploadType string, signature string, localVarOptionals *ImagesAddOpts) (ImagesAddResponseData, http.Header, error) {
 	var (
 		localVarHttpMethod  = strings.ToUpper("Post")
 		localVarPostBody    interface{}
@@ -93,16 +93,16 @@ func (a *ImagesApiService) Add(ctx context.Context, advertiserId int64, uploadTy
 	if localVarHttpHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHttpHeaderAccept
 	}
-	localVarFormParams.Add("advertiser_id", parameterToString(advertiserId, ""))
+	localVarFormParams.Add("account_id", parameterToString(accountId, ""))
 	localVarFormParams.Add("upload_type", parameterToString(uploadType, ""))
-	localVarFormParams.Add("image_signature", parameterToString(imageSignature, ""))
+	localVarFormParams.Add("signature", parameterToString(signature, ""))
 	var localVarFile *os.File
-	localVarFileKey = "image_file"
-	if localVarOptionals != nil && localVarOptionals.ImageFile.IsSet() {
+	localVarFileKey = "file"
+	if localVarOptionals != nil && localVarOptionals.File.IsSet() {
 		localVarFileOk := false
-		localVarFile, localVarFileOk = localVarOptionals.ImageFile.Value().(*os.File)
+		localVarFile, localVarFileOk = localVarOptionals.File.Value().(*os.File)
 		if !localVarFileOk {
-			return localVarReturnValue, nil, reportError("imageFile should be *os.File")
+			return localVarReturnValue, nil, reportError("file should be *os.File")
 		}
 	}
 	if localVarFile != nil {

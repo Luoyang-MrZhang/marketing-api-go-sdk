@@ -32,7 +32,7 @@ type FundsApiService service
 /*
 FundsApiService 获取资金账户信息
  * @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
- * @param advertiserId
+ * @param accountId
  * @param optional nil or *FundsGetOpts - Optional Parameters:
      * @param "Fields" (optional.Interface of []string) -  返回参数的字段列表
 

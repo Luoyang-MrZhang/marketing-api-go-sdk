@@ -9,7 +9,7 @@
 
 package model
 
-// MarketingTargetType : 推广内容资产类型
+// MarketingTargetType : 推广产品类型
 type MarketingTargetType string
 
 // List of MarketingTargetType
@@ -69,4 +69,8 @@ const (
 	MarketingTargetType_WECHAT_WORK                      MarketingTargetType = "MARKETING_TARGET_TYPE_WECHAT_WORK"
 	MarketingTargetType_LIVE_STREAM_ROOM                 MarketingTargetType = "MARKETING_TARGET_TYPE_LIVE_STREAM_ROOM"
 	MarketingTargetType_PERSONAL_STORE                   MarketingTargetType = "MARKETING_TARGET_TYPE_PERSONAL_STORE"
+	MarketingTargetType_PLATFORM_CHANNEL                 MarketingTargetType = "MARKETING_TARGET_TYPE_PLATFORM_CHANNEL"
+	MarketingTargetType_TWO_WHEEL_VEHICLE                MarketingTargetType = "MARKETING_TARGET_TYPE_TWO_WHEEL_VEHICLE"
+	MarketingTargetType_GOVERNMENT_AFFAIRS               MarketingTargetType = "MARKETING_TARGET_TYPE_GOVERNMENT_AFFAIRS"
+	MarketingTargetType_CAR_ECOLOGY                      MarketingTargetType = "MARKETING_TARGET_TYPE_CAR_ECOLOGY"
 )
